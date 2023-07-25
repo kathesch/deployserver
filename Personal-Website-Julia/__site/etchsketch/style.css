@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.container {
+    width: 512px;
+    height: 512px;
+    border: 2px solid #1F77B4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active {
+    background-color: black;
+}
+
+button {
+    margin-bottom: 32px;
+}

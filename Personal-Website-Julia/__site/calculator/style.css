@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    user-select: none;
+}
+
+.container {
+
+    min-height: 512px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black
+}
+
+.viewport {
+    flex: 0 0 100px;
+    margin: 36px;
+    display:flex;
+    font-size: 36px;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.viewport * {
+    flex: 1 1 46px;
+    align-items: center;
+    justify-content: right;
+    /* display:flex; */
+    text-align: right;
+    padding-right: 16px;
+    word-wrap: break-word;
+}
+
+.buttons {
+    flex: 1;
+    margin: 36px;
+    margin-top: 0px;
+    padding: 8px;
+
+    display: flex;
+    gap: 8px;
+}
+
+
+.left {
+    display:flex;
+    flex: 3 1 0;
+    flex-direction: column;
+    gap: 8px;
+}
+.numbers {
+    flex: 3 1 0;
+    /* border: 2px solid yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px;
+    gap: 8px;
+}
+
+.operations {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 8px;
+    gap: 8px;
+}
+
+.numbers > * {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1 0 0 */
+}
+
+.operations > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utilities {
+    flex: 0.5 1 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 8px;
+}
+
+.utilities > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #0B667B;
+    border-radius: 10px;
+}
+
+.viewport {
+    background-color: #0E7AB0;
+    border-radius: 10px;
+    box-shadow: 1px 1px ;
+}
+
+.viewport * {
+    background-color: #C4F4FF;
+    border-radius: 5px;
+    
+}
+
+.buttons {
+    background-color: #0E7AB0;
+    border-radius: 10px;
+    box-shadow: 1px 1px ;
+}
+
+.numbers, .utilities, .operations {
+    background-color: #7B3C09;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px ; */
+}
+
+.numbers *, .utilities *, .operations * {
+    background-color:#B0550D;
+    border-radius: 20%;
+    box-shadow: 1px 1px ;
+}
+
+.buttonPressed {
+    background-color: black;
+    transform: scale(0.9)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
